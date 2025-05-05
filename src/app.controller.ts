@@ -7,7 +7,8 @@
   export class AppController {
     @Get('download')
     downloadPDF(@Res() res: Response) {
-      const filePath = join(__dirname, '..', 'pdfs', 'arquivo.pdf');
+      // src/app.controller.ts
+      const filePath = join(__dirname, '..', 'public', 'pdfs', 'arquivo.pdf');
       const fileStream = createReadStream(filePath);
 
       res.set({
