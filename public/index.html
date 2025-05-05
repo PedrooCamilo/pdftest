@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Download PDF</title>
+  <style>
+    .download-btn {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .download-btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <button class="download-btn" onclick="downloadPDF()">Baixar PDF</button>
+
+  <script>
+    function downloadPDF() {
+      window.location.href = 'http://localhost:3000/download';
+    }
+  </script>
+</body>
+</html>
